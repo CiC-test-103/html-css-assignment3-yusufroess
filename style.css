@@ -47,7 +47,129 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /** Your CSS Below **/
+body {
+  font-family: var(--fs-base);
+  color: var(--clr-stone900);
+  background-color: var(--clr-rose50);
+  padding: 20px;
+}
+h1 {
+  font-family: var(--fs-accent);
+  font-size: var(--font-header);
+  color: var(--clr-stone900);
+  margin-bottom: 10px;
+}
+h2 {
+  font-size: var(--font-sub-header);
+  color: var(--clr-rose800);
+  margin-bottom: 5px;
+}
+p {
+  font-size: var(--font-paragraph);
+  color: var(--clr-stone600);
+  margin-bottom: 10px;
+}
+ul, ol {
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+li {
+  font-size: var(--font-paragraph);
+  color: var(--clr-stone600);
+  margin-bottom: 5px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+}
+th, td {
+  border: 1px solid var(--clr-stone150);
+  padding: 8px;
+  text-align: left;
+  font-size: var(--font-paragraph);
+}
+th {
+  background-color: var(--clr-stone100);
+}
+td {
+  background-color: var(--clr-rose50);
+}
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+section {
+  flex: 1;
+  min-width: 300px;
+  margin: 10px;
+}
+
+/* Add this to your CSS file */
+div h2 {
+  color: var(--clr-rose800);
+}
+
+div h2, section h2 {
+  color: var(--clr-brown800);
+}
+
+/* For small screens (mobiles) */
+@media only screen and (max-width: 600px) {
+  main {
+    flex-direction: column;
+  }
+
+  section {
+    min-width: 100%;
+  }
+}
+
+/* For medium screens (tablets) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  main {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  section {
+    min-width: 300px;
+  }
+}
+
+/* For large screens (desktops) */
+@media only screen and (min-width: 1025px) {
+  main {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  section {
+    min-width: 300px;
+  }
+}
 
 /** Attribution CSS **/
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+a:link, a:visited {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+a:hover, a:focus {
+  color: hsl(228, 50%, 50%);
+  text-decoration: underline;
+}
+
+
+
+
+
